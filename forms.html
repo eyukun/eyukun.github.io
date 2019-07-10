@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Tucker Pet Paradise</title>
+	<link	rel="stylesheet"
+			href="forms.css">
+	<link rel="icon" type="image/png" href="logo.png">
+
+</head>
+	
+<body>
+	<header id="margintop">
+		<img src="logo.png" alt="Logo Image" id="logo">
+		<br>&nbsp; &nbsp; <br> <br> <br> 
+		<h1 id="bigger">TUCKER PET PARADISE</h1>
+	</header>
+
+	<nav>
+		<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li class="dropdown">
+		<a href="services.html" class="dropbtn">Services</a>
+		<div class="dropdown-content">
+		  <a href="services.html#petgrooming">Pet Grooming</a>
+		  <a href="services.html#training">Pet Training</a>
+		  <a href="services.html#health">Pet Health Care</a>
+		  <a href="services.html#spa">Pet Spa</a>
+		  <a href="services.html#taxi">Pet Taxi</a>
+		  <a href="services.html#boarding">Pet Boarding</a>
+		</div>
+		</li>
+	  <li><a href="reservation.html">Reservation</a></li>
+	  <li class="dropdown">
+		<a href="facilities.html" class="dropbtn">Facilities</a>
+		<div class="dropdown-content">
+			<a href="facilities.html#swimmingpool">Swimming Pool</a>
+		    <a href="facilities.html#gym">Gym</a>
+		    <a href="facilities.html#petclinic">Pet Clinic</a>
+		    <a href="facilities.html#petpark">Pet Park</a>
+		    <a href="facilities.html#restaurant">Restaurant</a>
+		</div>
+		</li>
+	  <li><a href="aboutus.html">About Us</a>
+	  
+	  </li>
+	</ul>
+	</nav>
+	<h1 id="reserve">Reservation Form</h1>
+	<form method="post" action="thankyou.html" autocomplete="off">
+		<fieldset id="fieldset"><legend>Details</legend>
+			<label>First Name:</label>&nbsp;&nbsp;<input type="text" name="FirstName" autofocus id="FirstName" size="55" required maxlength="100"
+			tabindex="1" /><br><br>
+			<label>Last Name:</label>&nbsp;&nbsp;<input type="text" name="LastName" id="LastName" size="55" required maxlength="100"
+			tabindex="2" /><br><br>
+			<label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" size="55" required maxlength="100"
+			pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="3" /><br><br>
+			<label>Tel No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" size="55" required maxlength="100"
+			pattern="[0-9]{10}" tabindex="4" placeholder="Pattern: 0123456789"/><br><br>
+			<label>Pet's Name:</label>&nbsp;<input type="text"  tabindex="5" name="PetName" id="PetName" size="55" required maxlength="100" /><br><br>
+			<label>Choose Your Pet Services</label>:<br />
+			<input type="checkbox" value="Pet Grooming" name="Pet Grooming" />Pet Grooming
+			<input type="checkbox" value="Pet Training" name="Pet Training" id="servicesLeft" />Pet Training<br />
+			<input type="checkbox" value="Pet Health Care" name="Pet Health Care" class="services" />Pet Health Care
+			<input type="checkbox" value="Pet Spa" name="Pet Spa" id="servicesLeft1" />Pet Spa<br />
+			<input type="checkbox" value="Pet Taxi" name="Pet Taxi" class="services" />Pet Taxi
+			<input type="checkbox" value="Pet Boarding" name="Pet Boarding" id="servicesLeft2" />Pet Boarding<br /><br />
+			<label>Date:</label>&nbsp;&nbsp;<br/>
+				<select>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+				</select>
+				<select>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+				</select>
+				<select>
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+				<select>
+                    <option value="2019"> 2019</option>
+                    <option value="2020"> 2020</option>
+                    <option value="2021"> 2021</option>
+					<option value="2022"> 2022</option>
+				</select>&nbsp;&nbsp;
+				<br /><br />
+			<label>Special Request:</label>&nbsp;&nbsp;<br/><br/><textarea name="Request" id="font" rows="4" cols="30" maxlength="200" placeholder="Please describe if your pets get special requests"></textarea><br /><br />
+			<label>Street:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" tabindex="6" name="Street" id="Street" size="55" required maxlength="100"/><br><br>
+			<label>City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" tabindex="7" name="City" id="City" size="55" required maxlength="100"/><br><br>
+			<label>State:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" tabindex="8" name="State" id="State" size="55" required maxlength="100"/><br><br>
+			<label>Postcode:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" tabindex="9" name="Postcode" id="Postcode" size="55" required maxlength="100" pattern="[0-9]{5}" /><br><br>
+			<label>Credit Card Holder:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" tabindex="10" name="CreditCardHolder" id="CreditCardHolder" size="47" required maxlength="100" 
+			placeholder="Exactly as it appears on your card" /><br><br>
+			<label>Credit Card:</label>&nbsp;
+			<select>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="discover">Discover</option>
+				<option value="american">American Express</option>
+			</select>&nbsp;&nbsp;<br /><br />
+			<label>Credit Card Number:</label>&nbsp;<input type="text" tabindex="11" name="CreditCardNumber" id="CreditCardNumber" size="18" required maxlength="100" 
+			placeholder="No need dash" pattern="[0-9]{16}" /><br><br>
+			<label>Expiration Date:&nbsp;&nbsp;</label>
+                <select>
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select>
+                    <option value="2019"> 2019</option>
+                    <option value="2020"> 2020</option>
+                    <option value="2021"> 2021</option>
+					<option value="2022"> 2022</option>
+					<option value="2023"> 2023</option>
+					<option value="2024"> 2024</option>
+					<option value="2025"> 2025</option>
+					<option value="2026"> 2026</option>
+					<option value="2027"> 2027</option>
+					<option value="2028"> 2028</option>
+					<option value="2029"> 2029</option>
+					<option value="2030"> 2030</option>
+                </select>&nbsp; &nbsp;<br /><br />
+			<label>CVV:</label>&nbsp; &nbsp;<input type="text" tabindex="12" name="CVV" id="CVV" size="18" required maxlength="100" 
+		    pattern="[0-9]{3}" /><br><br>
+			<input type="submit" id="submit" value="Submit" />
+		</fieldset>
+	</form>
+<footer class="footer"><p>
+	<span>TUCKER PET PARADISE</span>
+	<br>Copyright © 2019 Tucker Pet Paradise<br>
+	<a href="mailto:Tucker_Pet_Paradise@gmail.com">Tucker_Pet_Paradise@gmail.com</a><br/>
+</footer>
+
+</body>  
+</html>
